@@ -1,0 +1,8 @@
+{
+  "plugins": [
+    "add-module-exports", "transform-runtime"
+  ],
+  "presets": ["env"],
+  "sourceMaps": true,
+  "retainLines": true
+}

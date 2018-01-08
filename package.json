@@ -1,19 +1,31 @@
 {
   "name": "blockchain",
   "version": "1.0.0",
-  "description": "",
+  "description": "based on blockchain technology, people to exchange the copyright",
   "main": "index.js",
   "dependencies": {
-    "koa": "^2.4.1"
+    "babel-core": "^6.26.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "debug": "^3.1.0",
+    "koa": "^2.4.1",
+    "mongoose": "^4.13.9"
   },
   "devDependencies": {
-    "nodemon": "^1.14.7"
+    "babel-cli": "^6.26.0",
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "chokidar": "^2.0.0",
+    "colors": "^1.1.2",
+    "mocha": "^4.1.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon ./app.js"
+    "test": "mocha",
+    "dev": "node bin/dev.js",
+    "compile": "babel src/ --out-dir app/ --retain-lines --source-maps"
   },
   "keywords": [],
-  "author": "",
+  "author": "layzimo",
   "license": "ISC"
 }
