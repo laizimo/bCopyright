@@ -66,7 +66,7 @@ function cacheClean() {
       delete require.cache[id];
     }
   });
-  console.log('App Cache cleaned...'.green);
+  log('App Cache cleaned...'.green);
 }
 
 process.on('quit', function(e) {

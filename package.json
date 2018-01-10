@@ -4,28 +4,46 @@
   "description": "based on blockchain technology, people to exchange the copyright",
   "main": "index.js",
   "dependencies": {
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
+    "body-parser": "^1.18.2",
     "debug": "^3.1.0",
     "koa": "^2.4.1",
+    "koa-bodyparser": "^4.2.0",
+    "koa-convert": "^1.2.0",
+    "koa-json": "^2.0.2",
+    "koa-logger": "^3.1.0",
+    "koa-router": "^7.3.0",
     "mongoose": "^4.13.9"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.1",
     "chai": "^4.1.2",
     "chai-http": "^3.0.0",
     "chokidar": "^2.0.0",
     "colors": "^1.1.2",
+    "eslint": "^4.15.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
     "mocha": "^4.1.0"
   },
   "scripts": {
     "test": "mocha",
-    "dev": "node bin/dev.js",
-    "compile": "babel src/ --out-dir app/ --retain-lines --source-maps"
+    "dev": "node ./bin/dev.js",
+    "compile": "babel src/ --out-dir app/ --retain-lines --source-maps",
+    "eslint": "./node_modules/.bin/gulp eslint_nodemon"
   },
   "keywords": [],
   "author": "layzimo",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laizimo/bCopyright.git"
+  },
   "license": "ISC"
 }
